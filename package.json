@@ -1,0 +1,37 @@
+{
+  "name": "beer_app",
+  "version": "1.0.0",
+  "description": "React Exercise",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-react": "^7.9.4"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosvicente100/Beer_app.git"
+  },
+  "author": "Carlos Vicente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosvicente100/Beer_app/issues"
+  },
+  "homepage": "https://github.com/carlosvicente100/Beer_app#readme"
+}
