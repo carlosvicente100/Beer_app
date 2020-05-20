@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Component Suite Snapshot check 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c3 {
+  margin: auto;
+}
+
+.c0 {
+  background-color: #227093;
+  color: white;
+  text-align: center;
+}
+
+.c1 {
+  width: 50%;
+  display: inline-grid;
+  grid-area: input;
+  grid-template-areas: 'span' 'select';
+}
+
+.c1 span {
+  grid-area: span;
+}
+
+.c1 div.Select {
+  width: 100%;
+  grid-area: select;
+}
+
+.c4 {
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: tomato;
+}
+
+.c4:disabled {
+  background-color: #7f8c8d;
+}
+
+<body>
+  <div>
+    <div
+      class="c0 Filters"
+    >
+      <label
+        class="c1"
+      >
+        Start Month
+        <div
+          class="c2 Select"
+        >
+          <select
+            class="c3"
+            data-testid="select"
+          >
+            <option
+              value="-1"
+            >
+              Empty
+            </option>
+            <option
+              value="1"
+            >
+              January
+            </option>
+            <option
+              value="2"
+            >
+              February
+            </option>
+            <option
+              value="3"
+            >
+              March
+            </option>
+            <option
+              value="4"
+            >
+              April
+            </option>
+            <option
+              value="5"
+            >
+              May
+            </option>
+            <option
+              value="6"
+            >
+              June
+            </option>
+            <option
+              value="7"
+            >
+              July
+            </option>
+            <option
+              value="8"
+            >
+              August
+            </option>
+            <option
+              value="9"
+            >
+              September
+            </option>
+            <option
+              value="10"
+            >
+              October
+            </option>
+            <option
+              value="11"
+            >
+              November
+            </option>
+            <option
+              value="12"
+            >
+              December
+            </option>
+          </select>
+        </div>
+      </label>
+      <label
+        class="c1"
+      >
+        End Month
+        <div
+          class="c2 Select"
+        >
+          <select
+            class="c3"
+            data-testid="select"
+          >
+            <option
+              value="-1"
+            >
+              Empty
+            </option>
+            <option
+              value="1"
+            >
+              January
+            </option>
+            <option
+              value="2"
+            >
+              February
+            </option>
+            <option
+              value="3"
+            >
+              March
+            </option>
+            <option
+              value="4"
+            >
+              April
+            </option>
+            <option
+              value="5"
+            >
+              May
+            </option>
+            <option
+              value="6"
+            >
+              June
+            </option>
+            <option
+              value="7"
+            >
+              July
+            </option>
+            <option
+              value="8"
+            >
+              August
+            </option>
+            <option
+              value="9"
+            >
+              September
+            </option>
+            <option
+              value="10"
+            >
+              October
+            </option>
+            <option
+              value="11"
+            >
+              November
+            </option>
+            <option
+              value="12"
+            >
+              December
+            </option>
+          </select>
+        </div>
+      </label>
+      <label
+        class="c1"
+      >
+        Start year
+        <div
+          class="c2 Select"
+        >
+          <select
+            class="c3"
+            data-testid="select"
+          >
+            <option
+              value="-1"
+            >
+              Empty
+            </option>
+          </select>
+        </div>
+      </label>
+      <label
+        class="c1"
+      >
+        End year
+        <div
+          class="c2 Select"
+        >
+          <select
+            class="c3"
+            data-testid="select"
+          >
+            <option
+              value="-1"
+            >
+              Empty
+            </option>
+          </select>
+        </div>
+      </label>
+      <button
+        class="c4"
+        disabled=""
+      >
+        Filter
+      </button>
+      <button
+        class="c4"
+        disabled=""
+      >
+        Reset All
+      </button>
+    </div>
+  </div>
+</body>
+`;

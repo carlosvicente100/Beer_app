@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component Suite Snapshot check 1`] = `
+.c0 {
+  background-color: #706fd3;
+  color: black;
+  border-radius: 25px 0 25px 0;
+  overflow: hidden;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 50px 20px auto;
+  grid-template-columns: 125px auto auto;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  grid-template-areas: 'image title title' 'image . .' 'image description description';
+}
+
+.c0 img {
+  grid-area: image;
+}
+
+.c0 h1 {
+  height: auto;
+  grid-area: title;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.c0 p {
+  grid-area: description;
+  font-size: 14px;
+}
+
+.c1 {
+  margin-inline-start: 20px;
+  height: 200px;
+  width: auto;
+}
+
+<div
+  className="c0"
+>
+  <img
+    className="c1"
+    src="http://placekitten.com/200/300"
+  />
+  <h1>
+    dummy Name
+  </h1>
+  <span>
+    dummy tagline  (05/2020)
+  </span>
+  <p>
+    dummy description extra large for test shorter function if is required
+  </p>
+</div>
+`;

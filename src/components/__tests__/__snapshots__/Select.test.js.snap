@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select Component Suite Snapshot check 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c1 {
+  margin: auto;
+}
+
+<div
+  className="c0 Select"
+>
+  <select
+    className="c1"
+    data-testid="select"
+    onChange={[Function]}
+    value={-1}
+  >
+    <option
+      value={-1}
+    >
+      Empty
+    </option>
+    <option
+      defaultValue={false}
+      value={1}
+    >
+      January
+    </option>
+    <option
+      defaultValue={false}
+      value={2}
+    >
+      February
+    </option>
+    <option
+      defaultValue={false}
+      value={3}
+    >
+      March
+    </option>
+    <option
+      defaultValue={false}
+      value={4}
+    >
+      April
+    </option>
+    <option
+      defaultValue={false}
+      value={5}
+    >
+      May
+    </option>
+    <option
+      defaultValue={false}
+      value={6}
+    >
+      June
+    </option>
+    <option
+      defaultValue={false}
+      value={7}
+    >
+      July
+    </option>
+    <option
+      defaultValue={false}
+      value={8}
+    >
+      August
+    </option>
+    <option
+      defaultValue={false}
+      value={9}
+    >
+      September
+    </option>
+    <option
+      defaultValue={false}
+      value={10}
+    >
+      October
+    </option>
+    <option
+      defaultValue={false}
+      value={11}
+    >
+      November
+    </option>
+    <option
+      defaultValue={false}
+      value={12}
+    >
+      December
+    </option>
+  </select>
+</div>
+`;

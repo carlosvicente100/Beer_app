@@ -1,6 +1,6 @@
-import { all } from "redux-saga/effects";
-import fetchFromUrl from "./fetch";
+import { all } from 'redux-saga/effects'
+import fetchDataFromUrl from './fetch'
 
 export default function* rootSaga() {
-  yield all([fetchFromUrl()]);
+  yield all([fetchDataFromUrl()])
 }

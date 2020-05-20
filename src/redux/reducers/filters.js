@@ -1,4 +1,4 @@
-import { fetchSetDates, fetchResetDates } from "../actions";
+import { fetchSetDates, fetchResetDates } from '../actions'
 
 export const initialState = {
   startDate: {
@@ -9,7 +9,7 @@ export const initialState = {
     year: -1,
     month: -1
   }
-};
+}
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
@@ -18,14 +18,14 @@ export default function reducer(state = initialState, action) {
         ...state,
         startDate: action.data.startDate,
         endDate: action.data.endDate
-      };
+      }
     case fetchResetDates:
       return {
         ...initialState
-      };
+      }
     default:
       return {
         ...state
-      };
+      }
   }
 }

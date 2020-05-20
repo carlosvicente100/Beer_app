@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { useSelector } from "react-redux";
-import { filterByDate, makePagination } from "../utils";
+import React, { useState, useEffect } from 'react'
+import styled from 'styled-components'
+import { useSelector } from 'react-redux'
+import { filterByDate, makePagination } from '../utils'
 
-import Filters from "./Filters";
-import ItemList from "./ItemList";
-import Pagination from "./Pagination";
+import Filters from './Filters'
+import ItemList from './ItemList'
+import Pagination from './Pagination'
 
 const HomeContainer = styled.div`
   font-family: verdana;
@@ -39,36 +39,40 @@ const HomeContainer = styled.div`
   div.Pagination {
     grid-area: Pagination;
   }
-`;
+`
 const Home = () => {
-   const [currentPage, setCurrentPage] = useState(0);
-   const { items } = useSelector(state => state.itemsReducer);
-   const { startDate, endDate } = useSelector(state => state.filtersReducer);
-   let itemsFiltered = [];
-   if (items.length > 0) {
-     itemsFiltered = filterByDate(startDate, endDate, items);
-   }
-   const paginatedItems = makePagination(itemsFiltered);
+  const [currentPage, setCurrentPage] = useState(0)
+  const { items = [], error } = useSelector((state) => state.itemsReducer)
+  const { startDate, endDate } = useSelector((state) => state.filtersReducer)
+  let itemsFiltered = []
+  if (items.length > 0) {
+    itemsFiltered = filterByDate(startDate, endDate, items)
+  }
+  let paginatedItems = makePagination(itemsFiltered)
+
+  const updateFilters = () => {
+    setCurrentPage(0)
+  }
 
   return (
     <HomeContainer className="homecontainer">
-      <Filters></Filters>
+      <Filters updateFilters={updateFilters}></Filters>
       {paginatedItems.length > 0 ? (
         <>
-           <ItemList items={paginatedItems[currentPage]}></ItemList>
+          <ItemList items={paginatedItems[currentPage]}></ItemList>
           <Pagination
             setCurrentPage={setCurrentPage}
             totalPagination={paginatedItems} //paginatedItems.length
             current={currentPage}
           ></Pagination>
         </>
-       ) : ( 
+      ) : (
         <div className="NoResults">
-          <p>no beer for you :( </p>
+          <p>{error ? "We're having problems getting Beers, try it in a few minutes" : 'no beer for you :( '}</p>
         </div>
-       )} 
+      )}
     </HomeContainer>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

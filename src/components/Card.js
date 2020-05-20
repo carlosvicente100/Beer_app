@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const CardContainer = styled.div`
   background-color: #706fd3;
@@ -13,9 +13,9 @@ const CardContainer = styled.div`
   grid-template-columns: 125px auto auto;
   column-gap: 10px;
   grid-template-areas:
-    "image title title"
-    "image . ."
-    "image description description";
+    'image title title'
+    'image . .'
+    'image description description';
   img {
     grid-area: image;
   }
@@ -29,22 +29,22 @@ const CardContainer = styled.div`
     grid-area: description;
     font-size: 14px;
   }
-`;
+`
 
 const CardImage = styled.img`
   margin-inline-start: 20px;
   height: 200px;
   width: auto;
-`;
+`
 
 const Card = ({ name, description, image_url, tagline, first_brewed }) => {
   const checkLength = (string, maxLenght = 120) => {
     if (string.length > maxLenght) {
-      return string.slice(0, maxLenght) + "...";
+      return string.slice(0, maxLenght) + '...'
     } else {
-      return string;
+      return string
     }
-  };
+  }
   return (
     <CardContainer>
       <CardImage src={image_url}></CardImage>
@@ -52,16 +52,16 @@ const Card = ({ name, description, image_url, tagline, first_brewed }) => {
       <span>{`${tagline}  (${first_brewed})`}</span>
       <p>{checkLength(description)}</p>
     </CardContainer>
-  );
-};
+  )
+}
 Card.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image_url: PropTypes.string.isRequired,
   tagline: PropTypes.string.isRequired,
   first_brewed: PropTypes.string.isRequired
-};
+}
 
-Card.defaultProps = {};
+Card.defaultProps = {}
 
-export default Card;
+export default Card

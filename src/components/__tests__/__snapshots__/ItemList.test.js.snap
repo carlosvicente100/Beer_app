@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemList Component Suite Snapshot check 1`] = `
+.c1 {
+  background-color: #706fd3;
+  color: black;
+  border-radius: 25px 0 25px 0;
+  overflow: hidden;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 50px 20px auto;
+  grid-template-columns: 125px auto auto;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  grid-template-areas: 'image title title' 'image . .' 'image description description';
+}
+
+.c1 img {
+  grid-area: image;
+}
+
+.c1 h1 {
+  height: auto;
+  grid-area: title;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.c1 p {
+  grid-area: description;
+  font-size: 14px;
+}
+
+.c2 {
+  margin-inline-start: 20px;
+  height: 200px;
+  width: auto;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+}
+
+<div
+  className="c0 ItemList"
+>
+  <div
+    className="c1"
+  >
+    <img
+      className="c2"
+      src="https://images.punkapi.com/v2/keg.png"
+    />
+    <h1>
+      Buzz
+    </h1>
+    <span>
+      A Real Bitter Experience.  (09/2007)
+    </span>
+    <p>
+      A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <img
+      className="c2"
+      src="https://images.punkapi.com/v2/2.png"
+    />
+    <h1>
+      Trashy Blonde
+    </h1>
+    <span>
+      You Know You Shouldn't  (04/2008)
+    </span>
+    <p>
+      A titillating, neurotic, peroxide punk of a Pale Ale. Combining attitude, style, substance, and a little bit of low self...
+    </p>
+  </div>
+  <div
+    className="c1"
+  >
+    <img
+      className="c2"
+      src="https://images.punkapi.com/v2/keg.png"
+    />
+    <h1>
+      Berliner Weisse With Yuzu - B-Sides
+    </h1>
+    <span>
+      Japanese Citrus Berliner Weisse.  (11/2015)
+    </span>
+    <p>
+      Japanese citrus fruit intensifies the sour nature of this German classic.
+    </p>
+  </div>
+</div>
+`;

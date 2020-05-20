@@ -1,30 +1,30 @@
-import { call, put, takeEvery } from "redux-saga/effects";
-import { fetchRequested } from "../actions";
+import { call, put, takeEvery } from 'redux-saga/effects'
+import { fetchRequested, fetchSuccessItems, fetchErrorItems } from '../actions'
 
-const fetchGeneric = function(url) {
-  return fetch(url)
-    .then(response => response.json())
-    .then(response => {
-      if (response.error) {
-        throw response.error;
-      }
-      return response;
-    })
-    .catch(error => {
-      return response;
-    });
-};
-
-export function* fetchData({ url, fetchSucceeded, fetchPending, fetchFailed }) {
-  try {
-    yield put({ type: fetchPending });
-    const data = yield call(fetchGeneric, url);
-    yield put({ type: fetchSucceeded, data });
-  } catch (error) {
-    yield put({ type: fetchFailed });
-  }
+export default function* fetchDataFromUrl() {
+  yield takeEvery(fetchRequested, fetchData)
 }
 
-export default function* fetchFromUrl() {
-  yield takeEvery(fetchRequested, fetchData);
+const fetchGeneric = function (url) {
+  return fetch(url)
+    .then((res) => res.json())
+    .then((response) => {
+      if (response.error) {
+        throw response.error
+      }
+      return response
+    })
+    .catch((error) => {
+      console.error('error on url', error)
+      return { error: true }
+    })
+}
+
+export function* fetchData({ url }) {
+  const data = yield call(fetchGeneric, url)
+  if (data.error) {
+    yield put({ type: fetchErrorItems })
+  } else {
+    yield put({ type: fetchSuccessItems, data })
+  }
 }
