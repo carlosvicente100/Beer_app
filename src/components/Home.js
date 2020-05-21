@@ -62,7 +62,7 @@ const Home = () => {
           <ItemList items={paginatedItems[currentPage]}></ItemList>
           <Pagination
             setCurrentPage={setCurrentPage}
-            totalPagination={paginatedItems} //paginatedItems.length
+            totalPagination={paginatedItems}
             current={currentPage}
           ></Pagination>
         </>
