@@ -3,6 +3,11 @@ Test Exercise
 
 this app is formed by a filter, a list of elements, and a pagination components,
 
+scripts to use: 
+- npm start (runs parcel)
+- npm test (runs unitary test)
+- npx cypress open (runs e2e test)
+
 TODO LIST on this exercise:
 
 [🐥] Consistent component composition

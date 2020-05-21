@@ -10,6 +10,7 @@ import Pagination from './Pagination'
 const HomeContainer = styled.div`
   font-family: verdana;
   height: -webkit-fill-available;
+  height: 98vh;
   background-color: #2c2c54;
   display: grid;
   grid-template-columns: auto 500px auto;
