@@ -3,7 +3,14 @@ Test Exercise
 
 this app is formed by a filter, a list of elements, and a pagination components,
 
+
+
+installation:
+
+- npm install
+
 scripts to use: 
+
 - npm start (runs parcel)
 - npm test (runs unitary test)
 - npx cypress open (runs e2e test)
