@@ -10,15 +10,15 @@ scripts to use:
   
 TODO LIST on this exercise:  
   
-[🐥] Consistent component composition  
-[🐥] Clean code  
-[🐥] Re-usability  
-[🐥] Testing  
+- [🐥] Consistent component composition  
+- [🐥] Clean code  
+- [🐥] Re-usability  
+- [🐥] Testing  
   
 //extras  
   
-[🐥] Test   
-[🐥] Sate management with Redux  
-[🐥] Async calls with Redux Saga  
-[🐥] Code analysis and code readability: eslint,prettier  
-[🐣] Static type check with Typescript // I make a soft typecheck with proptypes only  
+- [🐥] Test   
+- [🐥] Sate management with Redux  
+- [🐥] Async calls with Redux Saga  
+- [🐥] Code analysis and code readability: eslint,prettier  
+- [🐣] Static type check with Typescript // I make a soft typecheck with proptypes only  
